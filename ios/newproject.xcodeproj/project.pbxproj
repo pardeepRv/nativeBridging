@@ -13,6 +13,10 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		1BDE8DF3DA9E2BF45539AD1E /* libPods-newproject-newprojectTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B480121CBC858D269E68353 /* libPods-newproject-newprojectTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		CE33EE69278D8B250081BF23 /* torch.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE33EE68278D8B250081BF23 /* torch.swift */; };
+		CE33EE6B278D8B880081BF23 /* Torch.m in Sources */ = {isa = PBXBuildFile; fileRef = CE33EE6A278D8B880081BF23 /* Torch.m */; };
+		CE33EE70278D92FE0081BF23 /* MBXMBTilesOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = CE33EE6E278D92FE0081BF23 /* MBXMBTilesOverlay.m */; };
+		CE33EE71278D92FE0081BF23 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = CE33EE6F278D92FE0081BF23 /* Reachability.m */; };
 		D9087C1F3DC70A346748CA3F /* libPods-newproject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 703AAE6A4E12355AA88B2FBC /* libPods-newproject.a */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +47,13 @@
 		703AAE6A4E12355AA88B2FBC /* libPods-newproject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-newproject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = newproject/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		944CD220040AB27CB1D34D6D /* Pods-newproject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-newproject.release.xcconfig"; path = "Target Support Files/Pods-newproject/Pods-newproject.release.xcconfig"; sourceTree = "<group>"; };
+		CE33EE67278D8B240081BF23 /* newproject-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "newproject-Bridging-Header.h"; sourceTree = "<group>"; };
+		CE33EE68278D8B250081BF23 /* torch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = torch.swift; sourceTree = "<group>"; };
+		CE33EE6A278D8B880081BF23 /* Torch.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Torch.m; sourceTree = "<group>"; };
+		CE33EE6C278D92FD0081BF23 /* MBXMBTilesOverlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBXMBTilesOverlay.h; sourceTree = "<group>"; };
+		CE33EE6D278D92FE0081BF23 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		CE33EE6E278D92FE0081BF23 /* MBXMBTilesOverlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBXMBTilesOverlay.m; sourceTree = "<group>"; };
+		CE33EE6F278D92FE0081BF23 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -86,12 +97,19 @@
 		13B07FAE1A68108700A75B9A /* newproject */ = {
 			isa = PBXGroup;
 			children = (
-				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
+				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
+				CE33EE6C278D92FD0081BF23 /* MBXMBTilesOverlay.h */,
+				CE33EE6E278D92FE0081BF23 /* MBXMBTilesOverlay.m */,
+				CE33EE6D278D92FE0081BF23 /* Reachability.h */,
+				CE33EE6F278D92FE0081BF23 /* Reachability.m */,
 				13B07FB71A68108700A75B9A /* main.m */,
+				CE33EE68278D8B250081BF23 /* torch.swift */,
+				CE33EE6A278D8B880081BF23 /* Torch.m */,
+				CE33EE67278D8B240081BF23 /* newproject-Bridging-Header.h */,
 			);
 			name = newproject;
 			sourceTree = "<group>";
@@ -207,7 +225,7 @@
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
 					13B07F861A680F5B00A75B9A = {
-						LastSwiftMigration = 1120;
+						LastSwiftMigration = 1310;
 					};
 				};
 			};
@@ -410,8 +428,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE33EE69278D8B250081BF23 /* torch.swift in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
+				CE33EE6B278D8B880081BF23 /* Torch.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
+				CE33EE71278D92FE0081BF23 /* Reachability.m in Sources */,
+				CE33EE70278D92FE0081BF23 /* MBXMBTilesOverlay.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,6 +452,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 61DEB83CFE48FFED6D9F85BE /* Pods-newproject-newprojectTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -457,6 +480,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 62AC6775C2CBCB297A897839 /* Pods-newproject-newprojectTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
 				INFOPLIST_FILE = newprojectTests/Info.plist;
@@ -500,6 +524,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = newproject;
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "newproject-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -528,6 +553,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = newproject;
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "newproject-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
