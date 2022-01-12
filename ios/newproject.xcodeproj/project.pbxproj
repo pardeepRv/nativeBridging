@@ -17,6 +17,16 @@
 		CE33EE6B278D8B880081BF23 /* Torch.m in Sources */ = {isa = PBXBuildFile; fileRef = CE33EE6A278D8B880081BF23 /* Torch.m */; };
 		CE33EE70278D92FE0081BF23 /* MBXMBTilesOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = CE33EE6E278D92FE0081BF23 /* MBXMBTilesOverlay.m */; };
 		CE33EE71278D92FE0081BF23 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = CE33EE6F278D92FE0081BF23 /* Reachability.m */; };
+		CE33EE77278D9B250081BF23 /* SwitchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE33EE76278D9B250081BF23 /* SwitchView.swift */; };
+		CE33EE79278D9B540081BF23 /* Switch.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE33EE78278D9B540081BF23 /* Switch.swift */; };
+		CE33EE7B278D9BA50081BF23 /* Switch.m in Sources */ = {isa = PBXBuildFile; fileRef = CE33EE7A278D9BA50081BF23 /* Switch.m */; };
+		CE33EE7D278D9D710081BF23 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE33EE7C278D9D710081BF23 /* MapKit.framework */; };
+		CE33EE80278DA4E40081BF23 /* testView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE33EE7F278DA4E40081BF23 /* testView.m */; };
+		CE33EE82278DA9B60081BF23 /* MBTILES_08.mbtiles in Resources */ = {isa = PBXBuildFile; fileRef = CE33EE81278DA9B60081BF23 /* MBTILES_08.mbtiles */; };
+		CE33EE84278DBD6E0081BF23 /* MBXMBTilesOverlay.h in Resources */ = {isa = PBXBuildFile; fileRef = CE33EE6C278D92FD0081BF23 /* MBXMBTilesOverlay.h */; };
+		CE33EE85278DBD6E0081BF23 /* MBXMBTilesOverlay.m in Resources */ = {isa = PBXBuildFile; fileRef = CE33EE6E278D92FE0081BF23 /* MBXMBTilesOverlay.m */; };
+		CE33EE86278DBD6E0081BF23 /* Reachability.h in Resources */ = {isa = PBXBuildFile; fileRef = CE33EE6D278D92FE0081BF23 /* Reachability.h */; };
+		CE33EE87278DBD6E0081BF23 /* Reachability.m in Resources */ = {isa = PBXBuildFile; fileRef = CE33EE6F278D92FE0081BF23 /* Reachability.m */; };
 		D9087C1F3DC70A346748CA3F /* libPods-newproject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 703AAE6A4E12355AA88B2FBC /* libPods-newproject.a */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +64,13 @@
 		CE33EE6D278D92FE0081BF23 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		CE33EE6E278D92FE0081BF23 /* MBXMBTilesOverlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBXMBTilesOverlay.m; sourceTree = "<group>"; };
 		CE33EE6F278D92FE0081BF23 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		CE33EE76278D9B250081BF23 /* SwitchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchView.swift; sourceTree = "<group>"; };
+		CE33EE78278D9B540081BF23 /* Switch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Switch.swift; sourceTree = "<group>"; };
+		CE33EE7A278D9BA50081BF23 /* Switch.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Switch.m; sourceTree = "<group>"; };
+		CE33EE7C278D9D710081BF23 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		CE33EE7E278DA4E40081BF23 /* testView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = testView.h; sourceTree = "<group>"; };
+		CE33EE7F278DA4E40081BF23 /* testView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = testView.m; sourceTree = "<group>"; };
+		CE33EE81278DA9B60081BF23 /* MBTILES_08.mbtiles */ = {isa = PBXFileReference; lastKnownFileType = file; path = MBTILES_08.mbtiles; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -70,6 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE33EE7D278D9D710081BF23 /* MapKit.framework in Frameworks */,
 				D9087C1F3DC70A346748CA3F /* libPods-newproject.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -100,6 +118,7 @@
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
+				CE33EE81278DA9B60081BF23 /* MBTILES_08.mbtiles */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				CE33EE6C278D92FD0081BF23 /* MBXMBTilesOverlay.h */,
@@ -110,6 +129,11 @@
 				CE33EE68278D8B250081BF23 /* torch.swift */,
 				CE33EE6A278D8B880081BF23 /* Torch.m */,
 				CE33EE67278D8B240081BF23 /* newproject-Bridging-Header.h */,
+				CE33EE76278D9B250081BF23 /* SwitchView.swift */,
+				CE33EE78278D9B540081BF23 /* Switch.swift */,
+				CE33EE7E278DA4E40081BF23 /* testView.h */,
+				CE33EE7F278DA4E40081BF23 /* testView.m */,
+				CE33EE7A278D9BA50081BF23 /* Switch.m */,
 			);
 			name = newproject;
 			sourceTree = "<group>";
@@ -117,6 +141,7 @@
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CE33EE7C278D9D710081BF23 /* MapKit.framework */,
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				703AAE6A4E12355AA88B2FBC /* libPods-newproject.a */,
 				4B480121CBC858D269E68353 /* libPods-newproject-newprojectTests.a */,
@@ -260,7 +285,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE33EE84278DBD6E0081BF23 /* MBXMBTilesOverlay.h in Resources */,
+				CE33EE85278DBD6E0081BF23 /* MBXMBTilesOverlay.m in Resources */,
+				CE33EE86278DBD6E0081BF23 /* Reachability.h in Resources */,
+				CE33EE87278DBD6E0081BF23 /* Reachability.m in Resources */,
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
+				CE33EE82278DA9B60081BF23 /* MBTILES_08.mbtiles in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -428,11 +458,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE33EE7B278D9BA50081BF23 /* Switch.m in Sources */,
 				CE33EE69278D8B250081BF23 /* torch.swift in Sources */,
+				CE33EE79278D9B540081BF23 /* Switch.swift in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
 				CE33EE6B278D8B880081BF23 /* Torch.m in Sources */,
+				CE33EE77278D9B250081BF23 /* SwitchView.swift in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 				CE33EE71278D92FE0081BF23 /* Reachability.m in Sources */,
+				CE33EE80278DA4E40081BF23 /* testView.m in Sources */,
 				CE33EE70278D92FE0081BF23 /* MBXMBTilesOverlay.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -509,7 +543,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = SFV2367NMH;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = newproject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -521,9 +555,9 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.inoappspogrn.grn.prod;
 				PRODUCT_NAME = newproject;
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE_SPECIFIER = GRN_DEV_CERTS;
 				SWIFT_OBJC_BRIDGING_HEADER = "newproject-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -539,7 +573,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = SFV2367NMH;
 				INFOPLIST_FILE = newproject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -550,9 +584,9 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.inoappspogrn.grn.prod;
 				PRODUCT_NAME = newproject;
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE_SPECIFIER = GRN_DEV_CERTS;
 				SWIFT_OBJC_BRIDGING_HEADER = "newproject-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";

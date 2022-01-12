@@ -8,10 +8,12 @@ import {
   Text,
   useColorScheme,
   View,
+  requireNativeComponent,
 } from 'react-native';
 import {Colors} from 'react-native/Libraries/NewAppScreen';
 
 const {Torch} = NativeModules;
+const Switch = requireNativeComponent('Switch');
 
 const AppNew = () => {
   const isDarkMode = useColorScheme() === 'dark';
@@ -34,7 +36,7 @@ const AppNew = () => {
   };
 
   return (
-    <SafeAreaView style={backgroundStyle}>
+    <SafeAreaView style={{flex: 1}}>
       <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
 
       <View
@@ -48,6 +50,12 @@ const AppNew = () => {
           <Button onPress={turnOff} title="Switch OFF " color="red" />
         )}
       </View>
+      <Switch 
+      style={{
+          width:414,
+          height:896
+      }}
+      />
     </SafeAreaView>
   );
 };
