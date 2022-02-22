@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">newproject</string>
+    <string name="offline_message">No Internet Connection</string>
 </resources>

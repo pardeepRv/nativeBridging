@@ -11,28 +11,38 @@ class SwitchView: UIView, MKMapViewDelegate {
   }*/
   override init(frame: CGRect) {
     super.init(frame: frame)
-  //  self.addSubview(button)
-   self.addSubview(Apple)
-   // addapple()
+    NotificationCenter.default.addObserver(self, selector: #selector(self.methodOfReceivedNotification(notification:)), name: Notification.Name("UpdateProgresstNotification"), object: nil)
+
+   self.addSubview(AppleMap)
+  self.addSubview(ProgressLabel)
   }
   required init?(coder aDecoder: NSCoder) {
     fatalError("init has not been implemented")
   }
-/* lazy var button: UIButton = {
-      let button = UIButton.init(type: UIButton.ButtonType.system)
-      button.autoresizingMask = [.flexibleWidth, .flexibleHeight]
-      button.titleLabel?.font = UIFont.systemFont(ofSize: 20)
-      button.addTarget(
-        self,
-        action: #selector(toggleSwitchStatus),
-        for: .touchUpInside
-      )
-      return button
-    }()
   
-  */
   
-  var Apple: MKMapView = {
+  @objc func methodOfReceivedNotification(notification: Notification) {
+   
+    print(notification.userInfo)
+    
+    if let Progress = notification.userInfo?["Progress"] as? String
+    {
+      ProgressLabel.text = Progress
+    }
+    
+    
+  }
+  var ProgressLabel: UILabel = {
+    let progresslbl = UILabel()
+    
+    progresslbl.font = UIFont.systemFont(ofSize: 20)
+    progresslbl.frame =  CGRect(x: 100, y: 0, width: 300, height: 40)
+    progresslbl.textColor = .black
+    progresslbl.textAlignment = .center
+    return progresslbl
+  }()
+  
+  var AppleMap: MKMapView = {
    let mapView = MKMapView()
       mapView.frame = CGRect(x: 0, y: 0, width: 414, height: 896)
       mapView.mapType = MKMapType.standard
@@ -40,23 +50,46 @@ class SwitchView: UIView, MKMapViewDelegate {
       mapView.isZoomEnabled = true
      mapView.isScrollEnabled = true
    mapView.isUserInteractionEnabled = true
- //  mapView.backgroundColor = .red
 //  MBXMBTilesOverlay *mbtilesOverlay;
    //let obj = MBXMBTilesOverlay()
+    let obj = ViewController()
+    obj.loadData()
+    let path = ""
+    obj.downloadFile(mapView)
+    
+    let annotation = MKPointAnnotation()
+    annotation.title = "London"
+    annotation.coordinate = CLLocationCoordinate2D(latitude: CLLocationDegrees(17.695930),
+                                                    longitude: CLLocationDegrees(146.099486))
+    mapView.addAnnotation(annotation)
 
-   var filePath = Bundle.main.url(forResource: "MBTILES_08", withExtension: "mbtiles")
-   print("path:",filePath?.absoluteString)
-  var mbtilesOverlay = MBXMBTilesOverlay()
-  mbtilesOverlay = MBXMBTilesOverlay(mbTilesPath:filePath?.absoluteString)
-   print("mbtilesOverlay:",mbtilesOverlay)
-  // mbtilesOverlay = [[MBXMBTilesOverlay alloc] initWithMBTilesPath:mbtilesPath];
-  // [mapView addOverlay:mbtilesOverlay];
-   mapView.addOverlay(mbtilesOverlay as! MKOverlay)
-   
+    
+    
+    //let indexPath = IndexPath(row: 8, section: 0)
+
+   // obj.tapButton(indexPath)
+    
+    
+   let documentsUrl = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first
+    
+    
+   if let fileURL = documentsUrl?.appendingPathComponent("MBTILES_08.mbtiles")
+    {
+ //  var filePath = Bundle.main.url(forResource: "MBTILES_08", withExtension: "mbtiles")
+     print("path:",path)
+ // var mbtilesOverlay = MBXMBTilesOverlay()
+     
+  //   mbtilesOverlay = MBXMBTilesOverlay(mbTilesPath:path)
+  // print("mbtilesOverlay:",mbtilesOverlay)
+     
+     // mbtilesOverlay = [[MBXMBTilesOverlay alloc] initWithMBTilesPath:mbtilesPath];
+     // [mapView addOverlay:mbtilesOverlay];
+ // mapView.addOverlay(mbtilesOverlay as! MKOverlay)
+   }
       return mapView
   }()
   
- 
+
   /*
   func addapple() {
     let mapView = MKMapView()

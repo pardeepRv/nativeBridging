@@ -21,12 +21,11 @@
 		CE33EE79278D9B540081BF23 /* Switch.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE33EE78278D9B540081BF23 /* Switch.swift */; };
 		CE33EE7B278D9BA50081BF23 /* Switch.m in Sources */ = {isa = PBXBuildFile; fileRef = CE33EE7A278D9BA50081BF23 /* Switch.m */; };
 		CE33EE7D278D9D710081BF23 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE33EE7C278D9D710081BF23 /* MapKit.framework */; };
-		CE33EE80278DA4E40081BF23 /* testView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE33EE7F278DA4E40081BF23 /* testView.m */; };
-		CE33EE82278DA9B60081BF23 /* MBTILES_08.mbtiles in Resources */ = {isa = PBXBuildFile; fileRef = CE33EE81278DA9B60081BF23 /* MBTILES_08.mbtiles */; };
 		CE33EE84278DBD6E0081BF23 /* MBXMBTilesOverlay.h in Resources */ = {isa = PBXBuildFile; fileRef = CE33EE6C278D92FD0081BF23 /* MBXMBTilesOverlay.h */; };
 		CE33EE85278DBD6E0081BF23 /* MBXMBTilesOverlay.m in Resources */ = {isa = PBXBuildFile; fileRef = CE33EE6E278D92FE0081BF23 /* MBXMBTilesOverlay.m */; };
 		CE33EE86278DBD6E0081BF23 /* Reachability.h in Resources */ = {isa = PBXBuildFile; fileRef = CE33EE6D278D92FE0081BF23 /* Reachability.h */; };
 		CE33EE87278DBD6E0081BF23 /* Reachability.m in Resources */ = {isa = PBXBuildFile; fileRef = CE33EE6F278D92FE0081BF23 /* Reachability.m */; };
+		CE87A9DC278EB7E100C3C0A2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE87A9DA278EB7E000C3C0A2 /* ViewController.m */; };
 		D9087C1F3DC70A346748CA3F /* libPods-newproject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 703AAE6A4E12355AA88B2FBC /* libPods-newproject.a */; };
 /* End PBXBuildFile section */
 
@@ -68,9 +67,8 @@
 		CE33EE78278D9B540081BF23 /* Switch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Switch.swift; sourceTree = "<group>"; };
 		CE33EE7A278D9BA50081BF23 /* Switch.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Switch.m; sourceTree = "<group>"; };
 		CE33EE7C278D9D710081BF23 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
-		CE33EE7E278DA4E40081BF23 /* testView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = testView.h; sourceTree = "<group>"; };
-		CE33EE7F278DA4E40081BF23 /* testView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = testView.m; sourceTree = "<group>"; };
-		CE33EE81278DA9B60081BF23 /* MBTILES_08.mbtiles */ = {isa = PBXFileReference; lastKnownFileType = file; path = MBTILES_08.mbtiles; sourceTree = "<group>"; };
+		CE87A9DA278EB7E000C3C0A2 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		CE87A9DB278EB7E100C3C0A2 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -118,7 +116,6 @@
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
-				CE33EE81278DA9B60081BF23 /* MBTILES_08.mbtiles */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				CE33EE6C278D92FD0081BF23 /* MBXMBTilesOverlay.h */,
@@ -129,10 +126,10 @@
 				CE33EE68278D8B250081BF23 /* torch.swift */,
 				CE33EE6A278D8B880081BF23 /* Torch.m */,
 				CE33EE67278D8B240081BF23 /* newproject-Bridging-Header.h */,
+				CE87A9DB278EB7E100C3C0A2 /* ViewController.h */,
+				CE87A9DA278EB7E000C3C0A2 /* ViewController.m */,
 				CE33EE76278D9B250081BF23 /* SwitchView.swift */,
 				CE33EE78278D9B540081BF23 /* Switch.swift */,
-				CE33EE7E278DA4E40081BF23 /* testView.h */,
-				CE33EE7F278DA4E40081BF23 /* testView.m */,
 				CE33EE7A278D9BA50081BF23 /* Switch.m */,
 			);
 			name = newproject;
@@ -290,7 +287,6 @@
 				CE33EE86278DBD6E0081BF23 /* Reachability.h in Resources */,
 				CE33EE87278DBD6E0081BF23 /* Reachability.m in Resources */,
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
-				CE33EE82278DA9B60081BF23 /* MBTILES_08.mbtiles in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -463,10 +459,10 @@
 				CE33EE79278D9B540081BF23 /* Switch.swift in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
 				CE33EE6B278D8B880081BF23 /* Torch.m in Sources */,
+				CE87A9DC278EB7E100C3C0A2 /* ViewController.m in Sources */,
 				CE33EE77278D9B250081BF23 /* SwitchView.swift in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 				CE33EE71278D92FE0081BF23 /* Reachability.m in Sources */,
-				CE33EE80278DA4E40081BF23 /* testView.m in Sources */,
 				CE33EE70278D92FE0081BF23 /* MBXMBTilesOverlay.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
